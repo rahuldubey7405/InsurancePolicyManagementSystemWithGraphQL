@@ -1,0 +1,16 @@
+type Query {
+  allPolicy: [Policy]
+  policy(policyId:Int): Policy
+}
+
+type Policy {
+  id: ID!
+  policyNumber: String
+  policyHolderName: String
+  policyType: String
+  premiumAmount: Float
+  startDate: String
+  endDate: String
+}
+
+
